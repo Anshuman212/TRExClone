@@ -1,8 +1,8 @@
 let score = 0;
 let cross = true;
 //interacting with audio in js
-audio = new Audio("gameaud.mp3");
-audioGo = new Audio("overaud.mp3");
+var audio = new Audio("gameaud.mp3");
+var audioGo = new Audio("overaud.mp3");
 
 // //playing the audio
 // setTimeout(() => {
