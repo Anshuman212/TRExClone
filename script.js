@@ -1,14 +1,14 @@
 let score = 0;
 let cross = true;
 //interacting with audio in js
-const audio = new Audio("gameaud.mp3");
+const audi = new Audio("gameaud.mp3");
 const audioGo = new Audio("overaud.mp3");
 
 // //playing the audio
 // setTimeout(() => {
 //   audio.play();
 // }, 10);
-audio.play();
+audi.play();
 
 // checking what happens on keypress up
 document.onkeydown = function (e) {
@@ -69,7 +69,7 @@ setInterval(() => {
     // then we remove the obstacle animantion
     obstacle.classList.remove("obstacleAni");
     player.classList.remove("animatePlayer");
-    audio.pause();
+//     audi.pause();
     audioGo.play();
     
     //pausing the audio
