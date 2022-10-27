@@ -4,10 +4,11 @@ let cross = true;
 audio = new Audio("gameaud.mp3");
 audioGo = new Audio("overaud.mp3");
 
-//playing the audio
-setTimeout(() => {
-  audio.play();
-}, 10);
+// //playing the audio
+// setTimeout(() => {
+//   audio.play();
+// }, 10);
+audio.play();
 
 // checking what happens on keypress up
 document.onkeydown = function (e) {
