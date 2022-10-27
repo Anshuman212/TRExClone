@@ -1,8 +1,8 @@
 let score = 0;
 let cross = true;
 //interacting with audio in js
-var audio = new Audio("gameaud.mp3");
-var audioGo = new Audio("overaud.mp3");
+const audio = new Audio("gameaud.mp3");
+const audioGo = new Audio("overaud.mp3");
 
 // //playing the audio
 // setTimeout(() => {
@@ -69,8 +69,9 @@ setInterval(() => {
     // then we remove the obstacle animantion
     obstacle.classList.remove("obstacleAni");
     player.classList.remove("animatePlayer");
-    audioGo.play();
     audio.pause();
+    audioGo.play();
+    
     //pausing the audio
     setTimeout(() => {
       audioGo.pause();
